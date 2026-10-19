@@ -11,7 +11,7 @@ sudo apt install mysql-server -y
 sudo systemctl enable mysql
 sudo systemctl start mysql
 
-sudo apt install php-fpm php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
+apt install nginx mariadb-server php-fpm php-mysql php-cli php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip unzip -y
 
 PHP_VER=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")
 sudo systemctl enable php${PHP_VER}-fpm
