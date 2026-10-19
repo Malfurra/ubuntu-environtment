@@ -11,7 +11,7 @@ sudo apt install mysql-server -y
 sudo systemctl enable mysql
 sudo systemctl start mysql
 
-sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
+sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip unzip -y
 
 sudo a2enmod rewrite
 sudo chown -R www-data:www-data /var/www/html
